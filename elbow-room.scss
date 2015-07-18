@@ -36,6 +36,13 @@ $bottom-sm: $sm;
   }
 }
 
+@mixin buffer ($elb-size: 8px, $elb-all: false, $elb-top: false, $elb-right: false, $elb-left: false, $elb-bottom: false) {
+  @if $elb-top { margin-top: $elb-size; }
+  @if $elb-right     { margin:     $elb-size; }
+  @if $elb-bottom     { margin:     $elb-size; }
+  @if $elb-left     { margin:     $elb-size; }
+  @if $elb-all { margin: $elb-size; }
+}
 @mixin breakpoint($point) {
   @if $point == large {
     @media (min-width: 64.375em) { @content; }
