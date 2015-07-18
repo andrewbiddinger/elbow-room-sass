@@ -1,55 +1,212 @@
+.buffer-test {
+  margin-top: 8px; }
+
 /*
-Error: Invalid CSS after "    margin: $sm": expected ";", was ");"
-        on line 35 of elbow-room.scss
 
-30: $top-sm: $sm;
-31: $right-sm: $sm;
-32: $left-sm: $sm;
-33: $bottom-sm: $sm;
-34:   .buffer-#{$placement} {
-35:     margin: $sm);
-36:   }
-37: }
-38: 
-39: @mixin breakpoint($point) {
-40:   @if $point == large {
+.buffer-sm {
+	margin: 8px;
+}
+.buffer-top-sm {
+	 margin-top: 8px;
+}
+.buffer-right-sm {
+	 margin-right: 8px;
+}
+.buffer-left-sm {
+	 margin-left: 8px;
+}
+.buffer-bottom-sm {
+	 margin-bottom: 8px;
+}
 
-Backtrace:
-elbow-room.scss:35
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:1162:in `expected'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:1098:in `expected'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:1093:in `tok!'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:758:in `block in try_declaration'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:1138:in `call'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:1138:in `rethrow'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:763:in `try_declaration'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:693:in `declaration_or_ruleset'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:658:in `block_child'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:647:in `block_contents'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:639:in `block'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:708:in `declaration_or_ruleset'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:658:in `block_child'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:650:in `block_contents'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:639:in `block'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:304:in `each_directive'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:219:in `special_directive'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:194:in `directive'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:657:in `block_child'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:650:in `block_contents'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:117:in `stylesheet'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:42:in `parse'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/engine.rb:403:in `_to_tree'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/engine.rb:378:in `_render_with_sourcemap'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/engine.rb:295:in `render_with_sourcemap'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/exec/sass_scss.rb:410:in `run'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/exec/base.rb:52:in `parse'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/exec/base.rb:19:in `parse!'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/bin/sass:13:in `<top (required)>'
-C:/Ruby22-x64/bin/sass:23:in `load'
-C:/Ruby22-x64/bin/sass:23:in `<main>'
+.anti-buffer-sm {
+	margin: -8px;
+}
+.anti-buffer-top-sm {
+	 margin-top: -8px;
+}
+.anti-buffer-right-sm {
+	 margin-right: -8px;
+}
+.anti-buffer-left-sm {
+	 margin-left: -8px;
+}
+.anti-buffer-bottom-sm {
+	 margin-bottom: -8px;
+}
+
+
+
+.bosom-sm {
+	padding: 8px;
+}
+
+.bosom-top-sm {
+	 padding-top: 8px;
+}
+.bosom-right-sm {
+	 padding-right: 8px;
+}
+.bosom-left-sm {
+	 padding-left: 8px;
+}
+.bosom-bottom-sm {
+	 padding-bottom: 8px;
+}
+
+
+.buffer {
+	margin: 15px;
+}
+.buffer-top {
+	 margin-top: 15px;
+}
+.buffer-right {
+	 margin-right: 15px;
+}
+.buffer-left {
+	 margin-left: 15px;
+}
+.buffer-bottom {
+	 margin-bottom: 15px;
+}
+
+.anti-buffer {
+	margin: -15px;
+}
+.anti-buffer-top {
+	 margin-top: -15px;
+}
+.anti-buffer-right {
+	 margin-right: -15px;
+}
+.anti-buffer-left {
+	 margin-left: -15px;
+}
+.anti-buffer-bottom {
+	 margin-bottom: -15px;
+}
+
+
+
+.bosom {
+	padding: 15px;
+}
+
+.bosom-top {
+	 padding-top: 15px;
+}
+.bosom-right {
+	 padding-right: 15px;
+}
+.bosom-left {
+	 padding-left: 15px;
+}
+.bosom-bottom {
+	 padding-bottom: 15px;
+}
+
+.buffer-md {
+	margin: 30px;
+}
+.buffer-top-md {
+	 margin-top: 30px;
+}
+.buffer-right-md {
+	 margin-right: 30px;
+}
+.buffer-left-md {
+	 margin-left: 30px;
+}
+.buffer-bottom-md {
+	 margin-bottom: 30px;
+}
+
+
+.anti-buffer-md {
+	margin: -30px;
+}
+.anti-buffer-top-md {
+	 margin-top: -30px;
+}
+.anti-buffer-right-md {
+	 margin-right: -30px;
+}
+.anti-buffer-left-md {
+	 margin-left: -30px;
+}
+.anti-buffer-bottom-md {
+	 margin-bottom: -30px;
+}
+
+
+.bosom-md {
+	padding: 30px;
+}
+
+.bosom-top-md {
+	 padding-top: 30px;
+}
+.bosom-right-md {
+	 padding-right: 30px;
+}
+.bosom-left-md {
+	 padding-left: 30px;
+}
+.bosom-bottom-md {
+	 padding-bottom: 30px;
+}
+
+.buffer-lg {
+	margin: 45px;
+}
+.buffer-top-lg {
+	 margin-top: 45px;
+}
+.buffer-right-lg {
+	 margin-right: 45px;
+}
+.buffer-left-lg {
+	 margin-left: 45px;
+}
+.buffer-bottom-lg {
+	 margin-bottom: 45px;
+}
+
+.anti-buffer-lg {
+	margin: -45px;
+}
+.anti-buffer-top-lg {
+	 margin-top: -45px;
+}
+.anti-buffer-right-lg {
+	 margin-right: -45px;
+}
+.anti-buffer-left-lg {
+	 margin-left: -45px;
+}
+.anti-buffer-bottom-lg {
+	 margin-bottom: -45px;
+}
+
+
+
+.bosom-lg {
+	padding: 45px;
+}
+.bosom-top-lg {
+	 padding-top: 45px;
+}
+.bosom-right-lg {
+	 padding-right: 45px;
+}
+.bosom-left-lg {
+	 padding-left: 45px;
+}
+.bosom-bottom-lg {
+	 padding-bottom: 45px;
+}
+
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"    margin: $sm\": expected \";\", was \");\"\A         on line 35 of elbow-room.scss\A \A 30: $top-sm: $sm;\A 31: $right-sm: $sm;\A 32: $left-sm: $sm;\A 33: $bottom-sm: $sm;\A 34:   .buffer-#{$placement} {\A 35:     margin: $sm);\A 36:   }\A 37: }\A 38: \A 39: @mixin breakpoint($point) {\A 40:   @if $point == large {"; }
+
+/*# sourceMappingURL=elbow-room.css.map */
