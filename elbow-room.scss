@@ -1,15 +1,60 @@
+// Elbow-Room Variables
 $elb-xs: 4px;
 $elb-sm: 8px;
 $elb-reg: 15px;
 $elb-md: 30px;
 $elb-lg: 45px;
-
+$elb-xlg: 65px;
 
 // Negative Buffers
-$anti-buffer-sm: margin: -8px;
+$elb-xs: -4px;
+$elb-sm: -8px;
+$elb-reg: -15px;
+$elb-md: -30px;
+$elb-lg: -45px;
+$elb-xlg: -65px;
 
+@mixin buffer-xs ($size: $elb-xs, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
+  @if $top { margin-top: $size; }
+  @if $right     { margin-right:     $size; }
+  @if $bottom     { margin-bottom:     $size; }
+  @if $left     { margin-left:     $size; }
+  @else { margin: $size; }
+}
 
-@mixin buffer ($size: $elb-size, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
+@mixin buffer-sm ($size: $elb-sm, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
+  @if $top { margin-top: $size; }
+  @if $right     { margin-right:     $size; }
+  @if $bottom     { margin-bottom:     $size; }
+  @if $left     { margin-left:     $size; }
+  @else { margin: $size; }
+}
+
+@mixin buffer ($size: $elb-reg, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
+  @if $top { margin-top: $size; }
+  @if $right     { margin-right:     $size; }
+  @if $bottom     { margin-bottom:     $size; }
+  @if $left     { margin-left:     $size; }
+  @else { margin: $size; }
+}
+
+@mixin buffer-md ($size: $elb-md, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
+  @if $top { margin-top: $size; }
+  @if $right     { margin-right:     $size; }
+  @if $bottom     { margin-bottom:     $size; }
+  @if $left     { margin-left:     $size; }
+  @else { margin: $size; }
+}
+
+@mixin buffer-lg ($size: $elb-lg, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
+  @if $top { margin-top: $size; }
+  @if $right     { margin-right:     $size; }
+  @if $bottom     { margin-bottom:     $size; }
+  @if $left     { margin-left:     $size; }
+  @else { margin: $size; }
+}
+
+@mixin buffer-xlg ($size: $elb-xlg, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
   @if $top { margin-top: $size; }
   @if $right     { margin-right:     $size; }
   @if $bottom     { margin-bottom:     $size; }
@@ -19,224 +64,7 @@ $anti-buffer-sm: margin: -8px;
 
 
 
-@mixin buffer-sm ($elb-size-sm: 8px, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
-  @if $top { margin-top: $elb-size-sm; }
-  @if $right     { margin-right:     $elb-size-sm; }
-  @if $bottom     { margin-bottom:     $elb-size-sm; }
-  @if $left     { margin-left:     $elb-size-sm; }
-  @else { margin: $elb-size-sm; }
-}
-
 .buffer-example {
   @include buffer($left: true);
 }
 
-
-
-/*
-
-.buffer-sm {
-	margin: 8px;
-}
-.buffer-top-sm {
-	 margin-top: 8px;
-}
-.buffer-right-sm {
-	 margin-right: 8px;
-}
-.buffer-left-sm {
-	 margin-left: 8px;
-}
-.buffer-bottom-sm {
-	 margin-bottom: 8px;
-}
-
-.anti-buffer-sm {
-	margin: -8px;
-}
-.anti-buffer-top-sm {
-	 margin-top: -8px;
-}
-.anti-buffer-right-sm {
-	 margin-right: -8px;
-}
-.anti-buffer-left-sm {
-	 margin-left: -8px;
-}
-.anti-buffer-bottom-sm {
-	 margin-bottom: -8px;
-}
-
-
-
-.bosom-sm {
-	padding: 8px;
-}
-
-.bosom-top-sm {
-	 padding-top: 8px;
-}
-.bosom-right-sm {
-	 padding-right: 8px;
-}
-.bosom-left-sm {
-	 padding-left: 8px;
-}
-.bosom-bottom-sm {
-	 padding-bottom: 8px;
-}
-
-
-.buffer {
-	margin: 15px;
-}
-.buffer-top {
-	 margin-top: 15px;
-}
-.buffer-right {
-	 margin-right: 15px;
-}
-.buffer-left {
-	 margin-left: 15px;
-}
-.buffer-bottom {
-	 margin-bottom: 15px;
-}
-
-.anti-buffer {
-	margin: -15px;
-}
-.anti-buffer-top {
-	 margin-top: -15px;
-}
-.anti-buffer-right {
-	 margin-right: -15px;
-}
-.anti-buffer-left {
-	 margin-left: -15px;
-}
-.anti-buffer-bottom {
-	 margin-bottom: -15px;
-}
-
-
-
-.bosom {
-	padding: 15px;
-}
-
-.bosom-top {
-	 padding-top: 15px;
-}
-.bosom-right {
-	 padding-right: 15px;
-}
-.bosom-left {
-	 padding-left: 15px;
-}
-.bosom-bottom {
-	 padding-bottom: 15px;
-}
-
-.buffer-md {
-	margin: 30px;
-}
-.buffer-top-md {
-	 margin-top: 30px;
-}
-.buffer-right-md {
-	 margin-right: 30px;
-}
-.buffer-left-md {
-	 margin-left: 30px;
-}
-.buffer-bottom-md {
-	 margin-bottom: 30px;
-}
-
-
-.anti-buffer-md {
-	margin: -30px;
-}
-.anti-buffer-top-md {
-	 margin-top: -30px;
-}
-.anti-buffer-right-md {
-	 margin-right: -30px;
-}
-.anti-buffer-left-md {
-	 margin-left: -30px;
-}
-.anti-buffer-bottom-md {
-	 margin-bottom: -30px;
-}
-
-
-.bosom-md {
-	padding: 30px;
-}
-
-.bosom-top-md {
-	 padding-top: 30px;
-}
-.bosom-right-md {
-	 padding-right: 30px;
-}
-.bosom-left-md {
-	 padding-left: 30px;
-}
-.bosom-bottom-md {
-	 padding-bottom: 30px;
-}
-
-.buffer-lg {
-	margin: 45px;
-}
-.buffer-top-lg {
-	 margin-top: 45px;
-}
-.buffer-right-lg {
-	 margin-right: 45px;
-}
-.buffer-left-lg {
-	 margin-left: 45px;
-}
-.buffer-bottom-lg {
-	 margin-bottom: 45px;
-}
-
-.anti-buffer-lg {
-	margin: -45px;
-}
-.anti-buffer-top-lg {
-	 margin-top: -45px;
-}
-.anti-buffer-right-lg {
-	 margin-right: -45px;
-}
-.anti-buffer-left-lg {
-	 margin-left: -45px;
-}
-.anti-buffer-bottom-lg {
-	 margin-bottom: -45px;
-}
-
-
-
-.bosom-lg {
-	padding: 45px;
-}
-.bosom-top-lg {
-	 padding-top: 45px;
-}
-.bosom-right-lg {
-	 padding-right: 45px;
-}
-.bosom-left-lg {
-	 padding-left: 45px;
-}
-.bosom-bottom-lg {
-	 padding-bottom: 45px;
-}
-
-*/
