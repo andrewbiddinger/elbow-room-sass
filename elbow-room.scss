@@ -1,4 +1,7 @@
-// Elbow-Room Variables
+// Elbow-Room Sass Layout Styling System by Andrew Biddinger 
+// Variables that can be customized globally. 
+// Note: Variables don't have to be customized. Custom values can be passed directly into the mixins. 
+
 $elb-xs: 4px;
 $elb-sm: 8px;
 $elb-reg: 15px;
@@ -14,7 +17,7 @@ $elb-anti-md: -30px;
 $elb-anti-lg: -45px;
 $elb-anti-xlg: -65px;
 
-// Buffers
+// Buffer Mixins
 
 @mixin buffer-xs ($size: $elb-xs, $top: false, $right: false, $left: false, $bottom: false) {
   @if $top { margin-top: $size; }
@@ -64,7 +67,7 @@ $elb-anti-xlg: -65px;
   @else { margin: $size; }
 }
 
-// Bosoms
+// Bosom Mixins
 
 @mixin bosom-xs ($size: $elb-xs, $top: false, $right: false, $left: false, $bottom: false) {
   @if $top { margin-top: $size; }
@@ -118,13 +121,13 @@ $elb-anti-xlg: -65px;
   @include buffer();
 }
 .buffer-example-custom {
-  @include buffer($size: 945px; $left: true);
+  @include buffer($size: 945px, $left: true);
 }
 .buffer-example-left {
   @include buffer($left: true);
 }
 
 .bosom-example {
-  @include bosom($left: true);
+  @include bosom();
 }
 
