@@ -5,12 +5,13 @@ $right-sm: $sm;
 $left-sm: $sm;
 $bottom-sm: $sm;
 
-@mixin buffer (
-  $sm, 
-  $top-sm, 
-  $right-sm,
-  $left-sm,
-  $bottom-sm) {
+$md: 20px;
+$top-md: $md;
+$right-md: $md;
+$left-md: $md;
+$bottom-md: $md;
+
+@mixin buffer ($sm, $top-sm, $right-sm, $left-sm, $bottom-sm) {
     margin: $sm;
     margin-top: $top-sm;
     margin-right: $right-sm;
@@ -20,6 +21,19 @@ $bottom-sm: $sm;
 
 .buffer-test {
   @include buffer($sm);
+}
+
+$placements: sm top-sm right-sm left-sm bottom-sm;
+
+@each $placement in $placements {
+$sm: 8px;
+$top-sm: $sm;
+$right-sm: $sm;
+$left-sm: $sm;
+$bottom-sm: $sm;
+  .buffer-#{$placement} {
+    margin: $sm);
+  }
 }
 
 @mixin breakpoint($point) {
