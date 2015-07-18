@@ -1,7 +1,7 @@
-// Elbow-Room Sass Layout Styling System by Andrew Biddinger 
+// Elbow-Room Sass -  Sass Margin and Padding Tweaking System by @AndrewBiddinger 
+
 // Variables that can be customized globally. 
 // Note: Variables don't have to be customized. Custom values can be passed directly into the mixins. 
-
 $elb-xs: 4px;
 $elb-sm: 8px;
 $elb-reg: 15px;
@@ -70,51 +70,51 @@ $elb-anti-xlg: -65px;
 // Bosom Mixins
 
 @mixin bosom-xs ($size: $elb-xs, $top: false, $right: false, $left: false, $bottom: false) {
-  @if $top { margin-top: $size; }
-  @if $right     { margin-right:     $size; }
-  @if $bottom     { margin-bottom:     $size; }
-  @if $left     { margin-left:     $size; }
-  @else { margin: $size; }
+  @if $top { padding-top: $size; }
+  @if $right     { padding-right:     $size; }
+  @if $bottom     { padding-bottom:     $size; }
+  @if $left     { padding-left:     $size; }
+  @else { padding: $size; }
 }
 
 @mixin bosom-sm ($size: $elb-sm, $top: false, $right: false, $left: false, $bottom: false) {
-  @if $top { margin-top: $size; }
-  @if $right     { margin-right:     $size; }
-  @if $bottom     { margin-bottom:     $size; }
-  @if $left     { margin-left:     $size; }
-  @else { margin: $size; }
+  @if $top { padding-top: $size; }
+  @if $right     { padding-right:     $size; }
+  @if $bottom     { padding-bottom:     $size; }
+  @if $left     { padding-left:     $size; }
+  @else { padding: $size; }
 }
 
 @mixin bosom ($size: $elb-reg, $top: false, $right: false, $left: false, $bottom: false) {
-  @if $top { margin-top: $size; }
-  @if $right     { margin-right:     $size; }
-  @if $bottom     { margin-bottom:     $size; }
-  @if $left     { margin-left:     $size; }
-  @else { margin: $size; }
+  @if $top { padding-top: $size; }
+  @if $right     { padding-right:     $size; }
+  @if $bottom     { padding-bottom:     $size; }
+  @if $left     { padding-left:     $size; }
+  @else { padding: $size; }
 }
 
 @mixin bosom-md ($size: $elb-md, $top: false, $right: false, $left: false, $bottom: false) {
-  @if $top { margin-top: $size; }
-  @if $right     { margin-right:     $size; }
-  @if $bottom     { margin-bottom:     $size; }
-  @if $left     { margin-left:     $size; }
-  @else { margin: $size; }
+  @if $top { padding-top: $size; }
+  @if $right     { padding-right:     $size; }
+  @if $bottom     { padding-bottom:     $size; }
+  @if $left     { padding-left:     $size; }
+  @else { padding: $size; }
 }
 
 @mixin bosom-lg ($size: $elb-lg, $top: false, $right: false, $left: false, $bottom: false) {
-  @if $top { margin-top: $size; }
-  @if $right     { margin-right:     $size; }
-  @if $bottom     { margin-bottom:     $size; }
-  @if $left     { margin-left:     $size; }
-  @else { margin: $size; }
+  @if $top { padding-top: $size; }
+  @if $right     { padding-right:     $size; }
+  @if $bottom     { padding-bottom:     $size; }
+  @if $left     { padding-left:     $size; }
+  @else { padding: $size; }
 }
 
 @mixin bosom-xlg ($size: $elb-xlg, $top: false, $right: false, $left: false, $bottom: false) {
-  @if $top { margin-top: $size; }
-  @if $right     { margin-right:     $size; }
-  @if $bottom     { margin-bottom:     $size; }
-  @if $left     { margin-left:     $size; }
-  @else { margin: $size; }
+  @if $top { padding-top: $size; }
+  @if $right     { padding-right:     $size; }
+  @if $bottom     { padding-bottom:     $size; }
+  @if $left     { padding-left:     $size; }
+  @else { padding: $size; }
 }
 
 .buffer-example {
@@ -124,7 +124,7 @@ $elb-anti-xlg: -65px;
   @include buffer($size: 945px, $left: true);
 }
 .buffer-example-left {
-  @include buffer($left: true);
+  @include bosom($left: true, $right:true);
 }
 
 .bosom-example {

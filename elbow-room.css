@@ -5,9 +5,10 @@
   margin-left: 945px; }
 
 .buffer-example-left {
-  margin-left: 15px; }
+  padding-right: 15px;
+  padding-left: 15px; }
 
 .bosom-example {
-  margin: 15px; }
+  padding: 15px; }
 
 /*# sourceMappingURL=elbow-room.css.map */
