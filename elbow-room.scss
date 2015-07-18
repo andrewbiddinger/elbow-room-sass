@@ -1,10 +1,16 @@
 /* Elbowroom CSS Layout Styling System by Andrew Biddinger */ 
+$sm: 8px;
+$top-sm: $sm;
+$right-sm: $sm;
+$left-sm: $sm;
+$bottom-sm: $sm;
+
 @mixin buffer (
-  $sm: 8px, 
-  $top-sm: 8px, 
-  $right-sm: 8px,
-  $left-sm: 8px,
-  $bottom-sm: 8px) {
+  $sm, 
+  $top-sm, 
+  $right-sm,
+  $left-sm,
+  $bottom-sm) {
     margin: $sm;
     margin-top: $top-sm;
     margin-right: $right-sm;
@@ -14,6 +20,18 @@
 
 .buffer-test {
   @include buffer($sm);
+}
+
+@mixin breakpoint($point) {
+  @if $point == large {
+    @media (min-width: 64.375em) { @content; }
+  }
+  @else if $point == medium {
+    @media (min-width: 50em) { @content; }
+  }
+  @else if $point == small {
+    @media (min-width: 37.5em)  { @content; }
+  }
 }
 
 /*
