@@ -1,10 +1,30 @@
+$elb-xs: 4px;
+$elb-sm: 8px;
+$elb-reg: 15px;
+$elb-md: 30px;
+$elb-lg: 45px;
 
-@mixin buffer ($elb-size: 8px, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
-  @if $top { margin-top: $elb-size; }
-  @if $right     { margin-right:     $elb-size; }
-  @if $bottom     { margin-bottom:     $elb-size; }
-  @if $left     { margin-left:     $elb-size; }
-  @else { margin: $elb-size; }
+
+// Negative Buffers
+$anti-buffer-sm: margin: -8px;
+
+
+@mixin buffer ($size: $elb-size, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
+  @if $top { margin-top: $size; }
+  @if $right     { margin-right:     $size; }
+  @if $bottom     { margin-bottom:     $size; }
+  @if $left     { margin-left:     $size; }
+  @else { margin: $size; }
+}
+
+
+
+@mixin buffer-sm ($elb-size-sm: 8px, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
+  @if $top { margin-top: $elb-size-sm; }
+  @if $right     { margin-right:     $elb-size-sm; }
+  @if $bottom     { margin-bottom:     $elb-size-sm; }
+  @if $left     { margin-left:     $elb-size-sm; }
+  @else { margin: $elb-size-sm; }
 }
 
 .buffer-example {
@@ -12,17 +32,6 @@
 }
 
 
-@mixin breakpoint($point) {
-  @if $point == large {
-    @media (min-width: 64.375em) { @content; }
-  }
-  @else if $point == medium {
-    @media (min-width: 50em) { @content; }
-  }
-  @else if $point == small {
-    @media (min-width: 37.5em)  { @content; }
-  }
-}
 
 /*
 

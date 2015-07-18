@@ -1,212 +1,36 @@
-.buffer-example {
-  margin-left: 8px; }
-
 /*
+Error: Invalid CSS after "...ffer-sm: margin": expected selector or at-rule, was ": -8px;"
+        on line 9 of elbow-room.scss
 
-.buffer-sm {
-	margin: 8px;
-}
-.buffer-top-sm {
-	 margin-top: 8px;
-}
-.buffer-right-sm {
-	 margin-right: 8px;
-}
-.buffer-left-sm {
-	 margin-left: 8px;
-}
-.buffer-bottom-sm {
-	 margin-bottom: 8px;
-}
+4: $elb-md: 30px;
+5: $elb-lg: 45px;
+6: 
+7: 
+8: // Negative Buffers
+9: $anti-buffer-sm: margin: -8px;
+10: 
+11: 
+12: @mixin buffer ($size: $elb-size, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
+13:   @if $top { margin-top: $size; }
+14:   @if $right     { margin-right:     $size; }
 
-.anti-buffer-sm {
-	margin: -8px;
-}
-.anti-buffer-top-sm {
-	 margin-top: -8px;
-}
-.anti-buffer-right-sm {
-	 margin-right: -8px;
-}
-.anti-buffer-left-sm {
-	 margin-left: -8px;
-}
-.anti-buffer-bottom-sm {
-	 margin-bottom: -8px;
-}
-
-
-
-.bosom-sm {
-	padding: 8px;
-}
-
-.bosom-top-sm {
-	 padding-top: 8px;
-}
-.bosom-right-sm {
-	 padding-right: 8px;
-}
-.bosom-left-sm {
-	 padding-left: 8px;
-}
-.bosom-bottom-sm {
-	 padding-bottom: 8px;
-}
-
-
-.buffer {
-	margin: 15px;
-}
-.buffer-top {
-	 margin-top: 15px;
-}
-.buffer-right {
-	 margin-right: 15px;
-}
-.buffer-left {
-	 margin-left: 15px;
-}
-.buffer-bottom {
-	 margin-bottom: 15px;
-}
-
-.anti-buffer {
-	margin: -15px;
-}
-.anti-buffer-top {
-	 margin-top: -15px;
-}
-.anti-buffer-right {
-	 margin-right: -15px;
-}
-.anti-buffer-left {
-	 margin-left: -15px;
-}
-.anti-buffer-bottom {
-	 margin-bottom: -15px;
-}
-
-
-
-.bosom {
-	padding: 15px;
-}
-
-.bosom-top {
-	 padding-top: 15px;
-}
-.bosom-right {
-	 padding-right: 15px;
-}
-.bosom-left {
-	 padding-left: 15px;
-}
-.bosom-bottom {
-	 padding-bottom: 15px;
-}
-
-.buffer-md {
-	margin: 30px;
-}
-.buffer-top-md {
-	 margin-top: 30px;
-}
-.buffer-right-md {
-	 margin-right: 30px;
-}
-.buffer-left-md {
-	 margin-left: 30px;
-}
-.buffer-bottom-md {
-	 margin-bottom: 30px;
-}
-
-
-.anti-buffer-md {
-	margin: -30px;
-}
-.anti-buffer-top-md {
-	 margin-top: -30px;
-}
-.anti-buffer-right-md {
-	 margin-right: -30px;
-}
-.anti-buffer-left-md {
-	 margin-left: -30px;
-}
-.anti-buffer-bottom-md {
-	 margin-bottom: -30px;
-}
-
-
-.bosom-md {
-	padding: 30px;
-}
-
-.bosom-top-md {
-	 padding-top: 30px;
-}
-.bosom-right-md {
-	 padding-right: 30px;
-}
-.bosom-left-md {
-	 padding-left: 30px;
-}
-.bosom-bottom-md {
-	 padding-bottom: 30px;
-}
-
-.buffer-lg {
-	margin: 45px;
-}
-.buffer-top-lg {
-	 margin-top: 45px;
-}
-.buffer-right-lg {
-	 margin-right: 45px;
-}
-.buffer-left-lg {
-	 margin-left: 45px;
-}
-.buffer-bottom-lg {
-	 margin-bottom: 45px;
-}
-
-.anti-buffer-lg {
-	margin: -45px;
-}
-.anti-buffer-top-lg {
-	 margin-top: -45px;
-}
-.anti-buffer-right-lg {
-	 margin-right: -45px;
-}
-.anti-buffer-left-lg {
-	 margin-left: -45px;
-}
-.anti-buffer-bottom-lg {
-	 margin-bottom: -45px;
-}
-
-
-
-.bosom-lg {
-	padding: 45px;
-}
-.bosom-top-lg {
-	 padding-top: 45px;
-}
-.bosom-right-lg {
-	 padding-right: 45px;
-}
-.bosom-left-lg {
-	 padding-left: 45px;
-}
-.bosom-bottom-lg {
-	 padding-bottom: 45px;
-}
-
+Backtrace:
+elbow-room.scss:9
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:1162:in `expected'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:1098:in `expected'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/scss/parser.rb:43:in `parse'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/engine.rb:403:in `_to_tree'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/engine.rb:295:in `render_with_sourcemap'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/exec/sass_scss.rb:410:in `run'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.16/bin/sass:13:in `<top (required)>'
+C:/Ruby22-x64/bin/sass:23:in `load'
+C:/Ruby22-x64/bin/sass:23:in `<main>'
 */
-
-/*# sourceMappingURL=elbow-room.css.map */
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...ffer-sm: margin\": expected selector or at-rule, was \": -8px;\"\A         on line 9 of elbow-room.scss\A \A 4: $elb-md: 30px;\A 5: $elb-lg: 45px;\A 6: \A 7: \A 8: // Negative Buffers\A 9: $anti-buffer-sm: margin: -8px;\A 10: \A 11: \A 12: @mixin buffer ($size: $elb-size, $all: false, $top: false, $right: false, $left: false, $bottom: false) {\A 13:   @if $top { margin-top: $size; }\A 14:   @if $right     { margin-right:     $size; }"; }
