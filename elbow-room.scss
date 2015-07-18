@@ -14,7 +14,9 @@ $elb-md: -30px;
 $elb-lg: -45px;
 $elb-xlg: -65px;
 
-@mixin buffer-xs ($size: $elb-xs, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
+// Buffers
+
+@mixin buffer-xs ($size: $elb-xs, $top: false, $right: false, $left: false, $bottom: false) {
   @if $top { margin-top: $size; }
   @if $right     { margin-right:     $size; }
   @if $bottom     { margin-bottom:     $size; }
@@ -22,7 +24,7 @@ $elb-xlg: -65px;
   @else { margin: $size; }
 }
 
-@mixin buffer-sm ($size: $elb-sm, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
+@mixin buffer-sm ($size: $elb-sm, $top: false, $right: false, $left: false, $bottom: false) {
   @if $top { margin-top: $size; }
   @if $right     { margin-right:     $size; }
   @if $bottom     { margin-bottom:     $size; }
@@ -30,7 +32,7 @@ $elb-xlg: -65px;
   @else { margin: $size; }
 }
 
-@mixin buffer ($size: $elb-reg, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
+@mixin buffer ($size: $elb-reg, $top: false, $right: false, $left: false, $bottom: false) {
   @if $top { margin-top: $size; }
   @if $right     { margin-right:     $size; }
   @if $bottom     { margin-bottom:     $size; }
@@ -38,7 +40,7 @@ $elb-xlg: -65px;
   @else { margin: $size; }
 }
 
-@mixin buffer-md ($size: $elb-md, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
+@mixin buffer-md ($size: $elb-md, $top: false, $right: false, $left: false, $bottom: false) {
   @if $top { margin-top: $size; }
   @if $right     { margin-right:     $size; }
   @if $bottom     { margin-bottom:     $size; }
@@ -46,7 +48,7 @@ $elb-xlg: -65px;
   @else { margin: $size; }
 }
 
-@mixin buffer-lg ($size: $elb-lg, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
+@mixin buffer-lg ($size: $elb-lg, $top: false, $right: false, $left: false, $bottom: false) {
   @if $top { margin-top: $size; }
   @if $right     { margin-right:     $size; }
   @if $bottom     { margin-bottom:     $size; }
@@ -54,7 +56,7 @@ $elb-xlg: -65px;
   @else { margin: $size; }
 }
 
-@mixin buffer-xlg ($size: $elb-xlg, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
+@mixin buffer-xlg ($size: $elb-xlg, $top: false, $right: false, $left: false, $bottom: false) {
   @if $top { margin-top: $size; }
   @if $right     { margin-right:     $size; }
   @if $bottom     { margin-bottom:     $size; }
@@ -62,7 +64,55 @@ $elb-xlg: -65px;
   @else { margin: $size; }
 }
 
+// Bosoms
 
+@mixin bosom-xs ($size: $elb-xs, $top: false, $right: false, $left: false, $bottom: false) {
+  @if $top { margin-top: $size; }
+  @if $right     { margin-right:     $size; }
+  @if $bottom     { margin-bottom:     $size; }
+  @if $left     { margin-left:     $size; }
+  @else { margin: $size; }
+}
+
+@mixin bosom-sm ($size: $elb-sm, $top: false, $right: false, $left: false, $bottom: false) {
+  @if $top { margin-top: $size; }
+  @if $right     { margin-right:     $size; }
+  @if $bottom     { margin-bottom:     $size; }
+  @if $left     { margin-left:     $size; }
+  @else { margin: $size; }
+}
+
+@mixin bosom ($size: $elb-reg, $top: false, $right: false, $left: false, $bottom: false) {
+  @if $top { margin-top: $size; }
+  @if $right     { margin-right:     $size; }
+  @if $bottom     { margin-bottom:     $size; }
+  @if $left     { margin-left:     $size; }
+  @else { margin: $size; }
+}
+
+@mixin bosom-md ($size: $elb-md, $top: false, $right: false, $left: false, $bottom: false) {
+  @if $top { margin-top: $size; }
+  @if $right     { margin-right:     $size; }
+  @if $bottom     { margin-bottom:     $size; }
+  @if $left     { margin-left:     $size; }
+  @else { margin: $size; }
+}
+
+@mixin bosom-lg ($size: $elb-lg, $top: false, $right: false, $left: false, $bottom: false) {
+  @if $top { margin-top: $size; }
+  @if $right     { margin-right:     $size; }
+  @if $bottom     { margin-bottom:     $size; }
+  @if $left     { margin-left:     $size; }
+  @else { margin: $size; }
+}
+
+@mixin bosom-xlg ($size: $elb-xlg, $top: false, $right: false, $left: false, $bottom: false) {
+  @if $top { margin-top: $size; }
+  @if $right     { margin-right:     $size; }
+  @if $bottom     { margin-bottom:     $size; }
+  @if $left     { margin-left:     $size; }
+  @else { margin: $size; }
+}
 
 .buffer-example {
   @include buffer($left: true);

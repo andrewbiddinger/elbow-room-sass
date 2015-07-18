@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAkEA,eAAgB;EA9BE,WAAW,EAzBnB,KAAK",
+"mappings": "AAoHA,eAAgB;EA9EE,WAAW,EA3BnB,KAAK",
 "sources": ["elbow-room.scss"],
 "names": [],
 "file": "elbow-room.css"
