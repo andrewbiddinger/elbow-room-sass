@@ -7,12 +7,12 @@ $elb-lg: 45px;
 $elb-xlg: 65px;
 
 // Negative Buffers
-$elb-xs: -4px;
-$elb-sm: -8px;
-$elb-reg: -15px;
-$elb-md: -30px;
-$elb-lg: -45px;
-$elb-xlg: -65px;
+$elb-anti-xs: -4px;
+$elb-anti-sm: -8px;
+$elb-anti-reg: -15px;
+$elb-anti-md: -30px;
+$elb-anti-lg: -45px;
+$elb-anti-xlg: -65px;
 
 // Buffers
 
@@ -115,6 +115,16 @@ $elb-xlg: -65px;
 }
 
 .buffer-example {
+  @include buffer();
+}
+.buffer-example-custom {
+  @include buffer($size: 945px; $left: true);
+}
+.buffer-example-left {
   @include buffer($left: true);
+}
+
+.bosom-example {
+  @include bosom($left: true);
 }
 
