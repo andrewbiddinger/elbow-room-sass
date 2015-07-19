@@ -42,3 +42,10 @@ Network Trash Folder
 Temporary Items
 .apdisk
 .sass-cache
+.gitignore
+.gitattributes
+node_modules
+elbow-room.css
+elbow-room.css.map
+Gruntfile.js
+package.json
