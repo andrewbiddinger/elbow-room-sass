@@ -2,7 +2,7 @@
 #	Elbow-Room Sass 
 Sass Margin and Padding Tweaking System by @AndrewBiddinger 
 
-**Version: 0.0.1**
+**Version: 0.0.2**
 
 ## The System's Termanology
 **Buffer**  = CSS Margin (Referring to a shield, cushion, or bumper.) Margin is the elbowroom outside an element.
