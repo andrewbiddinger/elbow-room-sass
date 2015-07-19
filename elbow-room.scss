@@ -1,7 +1,14 @@
-// Elbow-Room Sass -  Sass Margin and Padding Tweaking System by @AndrewBiddinger 
+/* Elbow-Room Sass -  Sass Margin and Padding Tweaking System by @AndrewBiddinger 
+**
+**	** The System's Termanology **
+**	Buffer: (Referring to shield, cushion, or bumper.) = CSS Margin - Margin is the elbowroom outside an element.
+**	Bosom: (Referring to a state of enclosing intimacy, warm closeness, like a bosom friend.) = CSS Padding - Padding is the elbowroom within an element.
+*/
 
-// Variables that can be customized globally. 
-// Note: Variables don't have to be customized. Custom values can be passed directly into the mixins. 
+/* Variables that can be customized globally. 
+Note: Variables don't have to be customized. Custom values can be passed directly into the mixins. 
+*/
+
 $elb-xs: 4px;
 $elb-sm: 8px;
 $elb-reg: 15px;
@@ -9,7 +16,7 @@ $elb-md: 30px;
 $elb-lg: 45px;
 $elb-xlg: 65px;
 
-// Negative Buffers
+/* Negative Buffers */
 $elb-anti-xs: -4px;
 $elb-anti-sm: -8px;
 $elb-anti-reg: -15px;
@@ -17,7 +24,7 @@ $elb-anti-md: -30px;
 $elb-anti-lg: -45px;
 $elb-anti-xlg: -65px;
 
-// Buffer Mixins
+/* Buffer Mixins */
 
 @mixin buffer-xs ($size: $elb-xs, $top: false, $right: false, $left: false, $bottom: false) {
   @if $top { margin-top: $size; }
@@ -67,7 +74,7 @@ $elb-anti-xlg: -65px;
   @else { margin: $size; }
 }
 
-// Bosom Mixins
+/* Bosom Mixins */
 
 @mixin bosom-xs ($size: $elb-xs, $top: false, $right: false, $left: false, $bottom: false) {
   @if $top { padding-top: $size; }

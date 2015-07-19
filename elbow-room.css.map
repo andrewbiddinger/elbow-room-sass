@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAuHA,eAAgB;EA7EN,MAAM,EApCN,IAAI;;AAoHd,sBAAuB;EAjFL,WAAW,EAkFJ,KAAK;;AAE9B,oBAAqB;EApCF,aAAa,EAnFtB,IAAI;EAqFI,YAAY,EArFpB,IAAI;;AA2Hd,cAAe;EArCL,OAAO,EAtFP,IAAI",
+"mappings": ";;;;;;;;;;;;AA8HA,eAAgB;EA7EN,MAAM,EApCN,IAAI;;AAoHd,sBAAuB;EAjFL,WAAW,EAkFJ,KAAK;;AAE9B,oBAAqB;EApCF,aAAa,EAnFtB,IAAI;EAqFI,YAAY,EArFpB,IAAI;;AA2Hd,cAAe;EArCL,OAAO,EAtFP,IAAI",
 "sources": ["elbow-room.scss"],
 "names": [],
 "file": "elbow-room.css"
