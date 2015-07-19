@@ -1,12 +1,13 @@
 /* Elbow-Room Sass -  Sass Margin and Padding Tweaking System by @AndrewBiddinger 
 **
 **	** The System's Termanology **
-**	Buffer: (Referring to shield, cushion, or bumper.) = CSS Margin - Margin is the elbowroom outside an element.
+**	Buffer: (Referring to a shield, cushion, or bumper.) = CSS Margin - Margin is the elbowroom outside an element.
 **	Bosom: (Referring to a state of enclosing intimacy, warm closeness, like a bosom friend.) = CSS Padding - Padding is the elbowroom within an element.
 */
 
-/* Variables that can be customized globally. 
-Note: Variables don't have to be customized. Custom values can be passed directly into the mixins. 
+/* 
+**	Variables that can be customized globally. 
+**	Note: Variables don't have to be customized. Custom values can be passed directly into the mixins. 
 */
 
 $elb-xs: 4px;
