@@ -1,6 +1,6 @@
 	
 #	Elbow-Room Sass 
-Sass Margin and Padding Tweaking System by @AndrewBiddinger 
+A Sass Built Margin and Padding System for Tweaking Layouts by @AndrewBiddinger 
 
 **Version: 0.0.2**
 
