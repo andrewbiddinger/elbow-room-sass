@@ -9,10 +9,23 @@ Sass Margin and Padding Tweaking System by @AndrewBiddinger
 
 **Bosom** = CSS Padding (Referring to a state of enclosing intimacy, warm closeness, like a bosom friend.) Padding is the elbowroom within an element.
 
-**Note:** Variables that can be customized globally or custom values can be passed directly into the mixins. 
+**Modifiers** control are the amount of elbow-room applied to the buffer or bosom mixin. 
+
+* xs = 4px
+* sm = 8px
+* reg = 15px
+* md = 30px
+* lg = 45px
+* xlg = 65px
+## Modifyer Usage 
+```
+@include bosom-lg();
+```
+
+**Note:** Modifier Variables can be customized globally or custom values can be passed directly into the mixins being used. 
 
 
-## Example Usage
+## Actual Usage Example
 ```
 .buffer-example {
   @include buffer();
