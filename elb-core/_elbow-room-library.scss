@@ -50,23 +50,6 @@
   padding-bottom: $elb-xs;
 }
 
-.anti-bosom-xs {
-  padding: $elb-anti-xs;
-}
-
-.anti-bosom-top-xs {
-  padding-top: $elb-anti-xs;
-}
-.anti-bosom-right-xs {
-  padding-right: $elb-anti-xs;
-}
-.anti-bosom-left-xs {
-  padding-left: $elb-anti-xs;
-}
-.anti-bosom-bottom-xs {
-  padding-bottom: $elb-anti-xs;
-}
-
 
 // Buffer Small
 .buffer-sm {
@@ -116,23 +99,6 @@
 }
 .bosom-bottom-sm {
   padding-bottom: $elb-sm;
-}
-
-.anti-bosom-sm {
-  padding: $elb-anti-sm;
-}
-
-.anti-bosom-top-sm {
-  padding-top: $elb-anti-sm;
-}
-.anti-bosom-right-sm {
-  padding-right: $elb-anti-sm;
-}
-.anti-bosom-left-sm {
-  padding-left: $elb-anti-sm;
-}
-.anti-bosom-bottom-sm {
-  padding-bottom: $elb-anti-sm;
 }
 
 
@@ -186,24 +152,6 @@
   padding-bottom: $elb-reg;
 }
 
-.anti-bosom {
-  padding: $elb-anti-reg;
-}
-
-.anti-bosom-top {
-  padding-top: $elb-anti-reg;
-}
-.anti-bosom-right {
-  padding-right: $elb-anti-reg;
-}
-.anti-bosom-left {
-  padding-left: $elb-anti-reg;
-}
-.anti-bosom-bottom {
-  padding-bottom: $elb-anti-reg;
-}
-
-
 
 // Buffer Medium
 .buffer-md {
@@ -255,22 +203,6 @@
   padding-bottom: $elb-md;
 }
 
-.anti-bosom-md {
-  padding: $elb-anti-md;
-}
-
-.anti-bosom-top-md {
-  padding-top: $elb-anti-md;
-}
-.anti-bosom-right-md {
-  padding-right: $elb-anti-md;
-}
-.anti-bosom-left-md {
-  padding-left: $elb-anti-md;
-}
-.anti-bosom-bottom-md {
-  padding-bottom: $elb-anti-md;
-}
 
 // Buffer Large
 .buffer-lg {
@@ -322,23 +254,6 @@
   padding-bottom: $elb-lg;
 }
 
-.anti-bosom-lg {
-  padding: $elb-anti-lg;
-}
-
-.anti-bosom-top-lg {
-  padding-top: $elb-anti-lg;
-}
-.anti-bosom-right-lg {
-  padding-right: $elb-anti-lg;
-}
-.anti-bosom-left-lg {
-  padding-left: $elb-anti-lg;
-}
-.anti-bosom-bottom-lg {
-  padding-bottom: $elb-anti-lg;
-}
-
 
 // Buffer Extra Large
 .buffer-xl {
@@ -388,21 +303,4 @@
 }
 .bosom-bottom-xl {
   padding-bottom: $elb-xl;
-}
-
-.anti-bosom-xl {
-  padding: $elb-anti-xl;
-}
-
-.anti-bosom-top-xl {
-  padding-top: $elb-anti-xl;
-}
-.anti-bosom-right-xl {
-  padding-right: $elb-anti-xl;
-}
-.anti-bosom-left-xl {
-  padding-left: $elb-anti-xl;
-}
-.anti-bosom-bottom-xl {
-  padding-bottom: $elb-anti-xl;
 }
