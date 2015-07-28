@@ -28,14 +28,14 @@ A Sass Built Margin and Padding System for Tweaking Layouts by @AndrewBiddinger
 
 ## Actual Usage Example
 ```
-.buffer-example {
+.buffer-example-custom {
   @include buffer();
 }
-.buffer-example-custom {
-  @include buffer($size: 945px, $left: true);
+.buffer-right-example-custom {
+  @include buffer(right);
 }
-.buffer-large-example-left-right {
-  @include bosom-lg($left: true, $right:true);
+.bosom-large-example-left-right {
+  @include bosom(left right, lg);
 }
 
 .bosom-example {
@@ -43,7 +43,7 @@ A Sass Built Margin and Padding System for Tweaking Layouts by @AndrewBiddinger
 }
 
 .anti-bosom-example {
-  @include anti-bosom();
+  @include bosom(all, reg, anti);
 }
 
 ```
