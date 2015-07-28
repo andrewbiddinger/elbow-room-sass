@@ -1,201 +1,93 @@
 // Elbow-Room Mixins
 
-// Buffer Mixins
+// Bosom Mixin
 
-@mixin buffer-xs ($size: $elb-xs, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
-  @if $top { margin-top: $size; }
-  @if $right     { margin-right:     $size; }
-  @if $bottom     { margin-bottom:     $size; }
-  @if $left     { margin-left:     $size; }
-  @if $all { margin: $size; }
+@mixin bosom ($options: all, $size: $elb-reg, $direction: normal){
+  @if $size == xxxs {
+    $size: $elb-xxxs;
+  }
+  @else if $size == xxs {
+    $size: $elb-xxs;
+  }
+  @else if $size == xs {
+    $size: $elb-xs;
+  }
+  @else if $size == sm {
+    $size: $elb-sm;
+  }
+  @else if $size == reg {
+    $size: $elb-reg;
+  }
+  @else if $size == md {
+    $size: $elb-md;
+  }
+  @else if $size == lg {
+    $size: $elb-lg;
+  }
+  @else if $size == xl {
+    $size: $elb-xl;
+  }
+  @else if $size == xxl {
+    $size: $elb-xxl;
+  }
+  @else if $size == xxxl {
+    $size: $elb-xxxl;
+  }
+  @if $direction == anti {
+    $size: $size * -1;
+  }
+  @if $options == all {
+    padding: $size;
+  }
+  @else {
+    @each $option in $options {
+      padding-#{$option}: $size;
+    }
+  }
 }
 
-@mixin buffer-sm ($size: $elb-sm, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
-  @if $top { margin-top: $size; }
-  @if $right     { margin-right:     $size; }
-  @if $bottom     { margin-bottom:     $size; }
-  @if $left     { margin-left:     $size; }
-  @if $all { margin: $size; }
-}
+// Buffer Mixin
 
-@mixin buffer ($size: $elb-reg, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
-  @if $top { margin-top: $size; }
-  @if $right     { margin-right:     $size; }
-  @if $bottom     { margin-bottom:     $size; }
-  @if $left     { margin-left:     $size; }
-  @if $all { margin: $size; }
-}
-
-@mixin buffer-md ($size: $elb-md, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
-  @if $top { margin-top: $size; }
-  @if $right     { margin-right:     $size; }
-  @if $bottom     { margin-bottom:     $size; }
-  @if $left     { margin-left:     $size; }
-  @if $all { margin: $size; }
-}
-
-@mixin buffer-lg ($size: $elb-lg, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
-  @if $top { margin-top: $size; }
-  @if $right     { margin-right:     $size; }
-  @if $bottom     { margin-bottom:     $size; }
-  @if $left     { margin-left:     $size; }
-  @if $all { margin: $size; }
-}
-
-@mixin buffer-xl ($size: $elb-xl, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
-  @if $top { margin-top: $size; }
-  @if $right     { margin-right:     $size; }
-  @if $bottom     { margin-bottom:     $size; }
-  @if $left     { margin-left:     $size; }
-  @if $all { margin: $size; }
-}
-
-// Bosom Mixins
-
-@mixin bosom-xs ($size: $elb-xs, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
-  @if $top { padding-top: $size; }
-  @if $right     { padding-right:     $size; }
-  @if $bottom     { padding-bottom:     $size; }
-  @if $left     { padding-left:     $size; }
-  @if $all { padding: $size; }
-}
-
-@mixin bosom-sm ($size: $elb-sm, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
-  @if $top { padding-top: $size; }
-  @if $right     { padding-right:     $size; }
-  @if $bottom     { padding-bottom:     $size; }
-  @if $left     { padding-left:     $size; }
-  @if $all { padding: $size; }
-}
-
-@mixin bosom ($size: $elb-reg, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
-  @if $top { padding-top: $size; }
-  @if $right     { padding-right:     $size; }
-  @if $bottom     { padding-bottom:     $size; }
-  @if $left     { padding-left:     $size; }
-  @if $all { padding: $size; }
-}
-
-@mixin bosom-md ($size: $elb-md, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
-  @if $top { padding-top: $size; }
-  @if $right     { padding-right:     $size; }
-  @if $bottom     { padding-bottom:     $size; }
-  @if $left     { padding-left:     $size; }
-  @if $all { padding: $size; }
-}
-
-@mixin bosom-lg ($size: $elb-lg, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
-  @if $top { padding-top: $size; }
-  @if $right     { padding-right:     $size; }
-  @if $bottom     { padding-bottom:     $size; }
-  @if $left     { padding-left:     $size; }
-  @if $all { padding: $size; }
-}
-
-@mixin bosom-xl ($size: $elb-xl, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
-  @if $top { padding-top: $size; }
-  @if $right     { padding-right:     $size; }
-  @if $bottom     { padding-bottom:     $size; }
-  @if $left     { padding-left:     $size; }
-  @if $all { padding: $size; }
-}
-
-// Anti Buffer Mixins
-
-@mixin anti-buffer-xs ($size: $elb-anti-xs, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
-  @if $top { margin-top: $size; }
-  @if $right     { margin-right:     $size; }
-  @if $bottom     { margin-bottom:     $size; }
-  @if $left     { margin-left:     $size; }
-  @if $all { margin: $size; }
-}
-
-@mixin anti-buffer-sm ($size: $elb-anti-sm, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
-  @if $top { margin-top: $size; }
-  @if $right     { margin-right:     $size; }
-  @if $bottom     { margin-bottom:     $size; }
-  @if $left     { margin-left:     $size; }
-  @if $all { margin: $size; }
-}
-
-@mixin anti-buffer ($size: $elb-anti-reg, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
-  @if $top { margin-top: $size; }
-  @if $right     { margin-right:     $size; }
-  @if $bottom     { margin-bottom:     $size; }
-  @if $left     { margin-left:     $size; }
-  @if $all { margin: $size; }
-}
-
-@mixin anti-buffer-md ($size: $elb-anti-md, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
-  @if $top { margin-top: $size; }
-  @if $right     { margin-right:     $size; }
-  @if $bottom     { margin-bottom:     $size; }
-  @if $left     { margin-left:     $size; }
-  @if $all { margin: $size; }
-}
-
-@mixin anti-buffer-lg ($size: $elb-anti-lg, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
-  @if $top { margin-top: $size; }
-  @if $right     { margin-right:     $size; }
-  @if $bottom     { margin-bottom:     $size; }
-  @if $left     { margin-left:     $size; }
-  @if $all { margin: $size; }
-}
-
-@mixin anti-buffer-xl ($size: $elb-anti-xl, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
-  @if $top { margin-top: $size; }
-  @if $right     { margin-right:     $size; }
-  @if $bottom     { margin-bottom:     $size; }
-  @if $left     { margin-left:     $size; }
-  @if $all { margin: $size; }
-}
-
-// Anti Bosom Mixins
-
-@mixin anti-bosom-xs ($size: $elb-anti-xs, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
-  @if $top { padding-top: $size; }
-  @if $right     { padding-right:     $size; }
-  @if $bottom     { padding-bottom:     $size; }
-  @if $left     { padding-left:     $size; }
-  @if $all { padding: $size; }
-}
-
-@mixin anti-bosom-sm ($size: $elb-anti-sm, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
-  @if $top { padding-top: $size; }
-  @if $right     { padding-right:     $size; }
-  @if $bottom     { padding-bottom:     $size; }
-  @if $left     { padding-left:     $size; }
-  @if $all { padding: $size; }
-}
-
-@mixin anti-bosom ($size: $elb-anti-reg, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
-  @if $top { padding-top: $size; }
-  @if $right     { padding-right:     $size; }
-  @if $bottom     { padding-bottom:     $size; }
-  @if $left     { padding-left:     $size; }
-  @if $all { padding: $size; }
-}
-
-@mixin anti-bosom-md ($size: $elb-anti-md, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
-  @if $top { padding-top: $size; }
-  @if $right     { padding-right:     $size; }
-  @if $bottom     { padding-bottom:     $size; }
-  @if $left     { padding-left:     $size; }
-  @if $all { padding: $size; }
-}
-
-@mixin anti-bosom-lg ($size: $elb-anti-lg, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
-  @if $top { padding-top: $size; }
-  @if $right     { padding-right:     $size; }
-  @if $bottom     { padding-bottom:     $size; }
-  @if $left     { padding-left:     $size; }
-  @if $all { padding: $size; }
-}
-
-@mixin anti-bosom-xl ($size: $elb-anti-xl, $all: false, $top: false, $right: false, $left: false, $bottom: false) {
-  @if $top { padding-top: $size; }
-  @if $right     { padding-right:     $size; }
-  @if $bottom     { padding-bottom:     $size; }
-  @if $left     { padding-left:     $size; }
-  @if $all { padding: $size; }
+@mixin buffer ($options: all, $size: $elb-reg, $direction: normal) {
+  @if $size == xxxs {
+    $size: $elb-xxxs;
+  }
+  @else if $size == xxs {
+    $size: $elb-xxs;
+  }
+  @else if $size == xs {
+    $size: $elb-xs;
+  }
+  @else if $size == sm {
+    $size: $elb-sm;
+  }
+  @else if $size == reg {
+    $size: $elb-reg;
+  }
+  @else if $size == md {
+    $size: $elb-md;
+  }
+  @else if $size == lg {
+    $size: $elb-lg;
+  }
+  @else if $size == xl {
+    $size: $elb-xl;
+  }
+  @else if $size == xxl {
+    $size: $elb-xxl;
+  }
+  @else if $size == xxxl {
+    $size: $elb-xxxl;
+  }
+  @if $direction == anti {
+    $size: $size * -1;
+  }
+  @if $options == all {
+    margin: $size;
+  }
+  @else {
+    @each $option in $options {
+      margin-#{$option}: $size;
+    }
+  }
 }
