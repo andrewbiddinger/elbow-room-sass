@@ -1,6 +1,6 @@
 {
   "name": "elbow-room-sass",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Sass Margin and Padding Tweaking System by @AndrewBiddinger",
   "main": "index.js",
   "devDependencies": {
