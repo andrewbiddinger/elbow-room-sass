@@ -43,7 +43,7 @@ A Sass Built Margin and Padding System for Tweaking Layouts by @AndrewBiddinger
 }
 
 .anti-bosom-example {
-  @include bosom(all, reg, anti);
+  @include bosom(all, md, anti);
 }
 
 ```
