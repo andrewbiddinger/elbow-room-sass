@@ -119,6 +119,25 @@
 .buffer-bottom {
   margin-bottom: $elb-reg;
 }
+
+// Buffer Nullify and Void
+.buffer-void {
+  margin: 0px;
+}
+
+.buffer-top-void {
+  margin-top: 0px;
+}
+.buffer-right-void {
+  margin-right: 0px;
+}
+.buffer-left-void {
+  margin-left: 0px;
+}
+.buffer-bottom-void {
+  margin-bottom: 0px;
+}
+
 .anti-buffer {
   margin: $elb-anti-reg;
 }
@@ -153,6 +172,23 @@
   padding-bottom: $elb-reg;
 }
 
+// Bosom Nullify and Void
+.bosom-void {
+  padding: 0px;
+}
+
+.bosom-top-void {
+  padding-top: 0px;
+}
+.bosom-right-void {
+  padding-right: 0px;
+}
+.bosom-left-void {
+  padding-left: 0px;
+}
+.bosom-bottom-void {
+  padding-bottom: 0px;
+}
 
 // Buffer Medium
 .buffer-md {
